@@ -1,0 +1,102 @@
+
+body {
+  background-color: rgb(135, 193, 212);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.wrapper {
+  width: 350px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 5px 21px 10px rgba(0, 0, 0, 0.1);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px 25px 20px;
+  gap: 12px;
+  position: relative;
+}
+.row {
+  position: relative;
+  width: 100%;
+}
+.row input {
+  width: 100%;
+  padding: 13px 12px 12px 45px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+input[type="submit"] {
+  width: 100%;
+  background-color: rgb(81, 186, 221);
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: rgb(55, 168, 206);
+}
+input[type="submit"]:active {
+  transform: translateY(+1px);
+}
+p {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  color: #fff;
+  font-weight: 600;
+  font-size: 25px;
+  background-color: rgb(66, 183, 223);
+}
+.row i {
+  position: absolute;
+  left: 2px;
+  top: 46%;
+  transform: translateY(-45%);
+  font-size: 16px;
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  background: #69c7b7;
+  border: 1px solid #69c7b7;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+}
+.row input[type="email"]:focus,
+.row input[type="password"]:focus {
+  border-color: rgb(55, 168, 206); /* darker blue border */
+  outline: none;
+  box-shadow: 2px 2px 7px rgba(55, 168, 206, 0.5); /* subtle blue glow */
+}
+.forgot a {
+  text-decoration: none;
+  color: rgb(81, 186, 221);
+}
+.forgot a:hover {
+  text-decoration: underline;
+}
+.signup {
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+}
+.signup a {
+  text-decoration: none;
+  color: rgb(81, 186, 221);
+}
